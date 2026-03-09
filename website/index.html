@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash - TSA Portfolio</title>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="gradient-text">TSA</span> Portfolio
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#analytics">Analytics</a></li>
+            <li><a href="#co-mapping">CO Mapping</a></li>
+            <li><a href="#project">Project</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch-title">Techno-Socio <br><span class="gradient-text">Activities Portfolio</span></h1>
+            <p class="subtitle">Showcasing First and Second Year Activities, Technical Achievements, and Social
+                Contributions.</p>
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h3>8+</h3>
+                    <p>Certifications</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>5</h3>
+                    <p>Technical Events</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fa-solid fa-hands-holding-child"></i>
+                    <h3>2</h3>
+                    <p>Social Initiatives</p>
+                </div>
+            </div>
+            <a href="#certificates" class="btn primary-btn">Explore Journey <i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+    </section>
+
+    <!-- Certificates Slideshow Section -->
+    <section id="certificates" class="section">
+        <div class="section-header">
+            <h2 class="section-title">My <span class="gradient-text">Certificates</span></h2>
+            <p>Highlights of my academic and extracurricular achievements</p>
+        </div>
+
+        <div class="carousel-container">
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                        <img src="assets/certificates/meta_winner.jpeg" alt="Metamorphosis 2K23">
+                        <div class="slide-caption">Metamorphosis 2K23 - 1st Prize</div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/certificates/DKTE_3rd_prize.jpeg" alt="Byte Saga Tech Symposium">
+                        <div class="slide-caption">Byte Saga Tech Symposium - 2nd Runner Up</div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/certificates/Pace_csr.png" alt="PACE CSR 2K23">
+                        <div class="slide-caption">PACE CSR 2K23 - Social Event</div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/certificates/Yash_spandan.png" alt="SPANDAN 2K24">
+                        <div class="slide-caption">SPANDAN 2K24 - Techno-Socio Activity</div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/certificates/acm_hackathon.png" alt="ACM Hackathon 2K24">
+                        <div class="slide-caption">ACM Hackathon 2K24</div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/certificates/ld4.0.png" alt="Linuxdiary 4.0">
+                        <div class="slide-caption">Linuxdiary 4.0 Workshop</div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/certificates/Udemy_ml_bootcamp.png" alt="Machine Learning Bootcamp">
+                        <div class="slide-caption">Udemy Machine Learning Bootcamp</div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/certificates/udemy_Tech_analysis.png" alt="Technical Analysis">
+                        <div class="slide-caption">Udemy Technical Analysis of Markets</div>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="carousel-button carousel-button--left is-hidden">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="carousel-button carousel-button--right">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <div class="carousel-nav">
+                <button class="carousel-indicator current-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Timeline Section -->
+    <section id="activities" class="section alt-bg">
+        <div class="section-header">
+            <h2 class="section-title">Activities <span class="gradient-text">Journey</span></h2>
+            <p>Chronological breakdown of events and key learnings</p>
+        </div>
+
+        <div class="timeline">
+            <!-- 2022 -->
+            <div class="timeline-item">
+                <div class="timeline-dot personal"></div>
+                <div class="timeline-date">Oct 06, 2022</div>
+                <div class="timeline-content glass-card">
+                    <div class="activity-badge personal">Personal Development</div>
+                    <h3>Udemy Technical Analysis of Markets</h3>
+                    <p>Completed course focusing on technical analysis and intelligent pattern identification across
+                        market trends. Learned stock/crypto fundamentals and technical depth.</p>
+                </div>
+            </div>
+
+            <!-- 2023 -->
+            <div class="timeline-item">
+                <div class="timeline-dot technical"></div>
+                <div class="timeline-date">Jan 29, 2023</div>
+                <div class="timeline-content glass-card">
+                    <div class="activity-badge technical">National / Technical</div>
+                    <h3>Metamorphosis 2K23</h3>
+                    <h4 class="highlight-text"><i class="fa-solid fa-medal"></i> 1st Prize Winner</h4>
+                    <p>Golang and Docker workshop. Learned backend systems running on Go and containerization with
+                        Docker. Gained insights into open source contributions.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot social"></div>
+                <div class="timeline-date">Apr 21, 2023</div>
+                <div class="timeline-content glass-card">
+                    <div class="activity-badge social">Intra-College / Social</div>
+                    <h3>PACE CSR 2K23</h3>
+                    <p>Visited "Apang Seva Kendra, Sangli". Spent time with children doing activities like games,
+                        singing, and dancing. Realized the importance of societal contribution.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot technical"></div>
+                <div class="timeline-date">Aug 20, 2023</div>
+                <div class="timeline-content glass-card">
+                    <div class="activity-badge technical">National / Technical</div>
+                    <h3>Linuxdiary 4.0</h3>
+                    <p>Basic to advanced Linux workshop. Learned about open-source, various distributions, operating
+                        systems, and terminal commands.</p>
+                </div>
+            </div>
+
+            <!-- 2024 -->
+            <div class="timeline-item">
+                <div class="timeline-dot technical"></div>
+                <div class="timeline-date">Mar 16, 2024</div>
+                <div class="timeline-content glass-card">
+                    <div class="activity-badge technical">National / Technical</div>
+                    <h3>Byte Saga Tech Symposium DKTE</h3>
+                    <h4 class="highlight-text"><i class="fa-solid fa-medal"></i> 2nd Runner Up</h4>
+                    <p>Offline coding event with 600+ participants. Solved complex data structure problems under 2
+                        hours. Honed problem-solving speed and accuracy.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot technical"></div>
+                <div class="timeline-date">Mar 23, 2024</div>
+                <div class="timeline-content glass-card">
+                    <div class="activity-badge technical">National / Technical</div>
+                    <h3>ACM Hackathon 2K24</h3>
+                    <p>24-hour hackathon by ACM WCE. Built a solution for efficient farmer loan execution via land area
+                        calculation, bypassing middlemen.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot social"></div>
+                <div class="timeline-date">Apr 14, 2024</div>
+                <div class="timeline-content glass-card">
+                    <div class="activity-badge social">Intra-College / Social</div>
+                    <h3>SPANDAN 2K24</h3>
+                    <p>Techno-Socio Activity. Visited "Shanta Sadan". Donated books, board games, and educational
+                        accessories to orphaned students. Learned how tech can bridge social gaps.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot technical"></div>
+                <div class="timeline-date">Jun 14, 2024</div>
+                <div class="timeline-content glass-card">
+                    <div class="activity-badge technical">Technical / Bootcamp</div>
+                    <h3>Udemy Machine Learning Bootcamp</h3>
+                    <p>Completed comprehensive 6-month ML course. Covered ML concepts, Python, and anomaly detection
+                        algorithms, building projects to solve real problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Mining Analytics Section -->
+    <section id="analytics" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Data Mining <span class="gradient-text">Analytics</span></h2>
+            <p>Visualizing activity distribution across years, domains, and regions</p>
+        </div>
+
+        <div class="charts-grid">
+            <div class="chart-container glass-card">
+                <h3>Year-Wise Activity Trends</h3>
+                <canvas id="yearlyTrendChart"></canvas>
+            </div>
+
+            <div class="chart-container glass-card">
+                <h3>Category Distribution</h3>
+                <canvas id="categoryChart"></canvas>
+            </div>
+
+            <div class="chart-container glass-card">
+                <h3>Level / Region Distribution</h3>
+                <canvas id="regionChart"></canvas>
+            </div>
+
+            <div class="chart-container glass-card">
+                <h3>CO Achievement Radar</h3>
+                <canvas id="coRadarChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- CO Mapping Section -->
+    <section id="co-mapping" class="section alt-bg">
+        <div class="section-header">
+            <h2 class="section-title">Course Outcomes <span class="gradient-text">Mapping</span></h2>
+            <p>Assessment and mapping of activities to educational objectives</p>
+        </div>
+
+        <div class="table-container glass-card">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>CO</th>
+                        <th>CO Statement</th>
+                        <th>Bloom Taxonomy Level</th>
+                        <th>Description</th>
+                        <th>Rate Achievement (1-5)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Engage the programme for welfare of society & environment</td>
+                        <td><span class="badge taxonomy-iii">III</span></td>
+                        <td>Applying</td>
+                        <td>
+                            <div class="rating">
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-solid fa-star active"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Appraise pragmatic skills for National & International compet.</td>
+                        <td><span class="badge taxonomy-iv">IV</span></td>
+                        <td>Analysing</td>
+                        <td>
+                            <div class="rating">
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Develop engineering solution for industry</td>
+                        <td><span class="badge taxonomy-v">V</span></td>
+                        <td>Evaluating</td>
+                        <td>
+                            <div class="rating">
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Compose and communicate paper in international conference or journals</td>
+                        <td><span class="badge taxonomy-vi">VI</span></td>
+                        <td>Creating</td>
+                        <td>
+                            <div class="rating">
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Problem Statement Section -->
+    <section id="project" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Problem <span class="gradient-text">Statement</span></h2>
+            <p>Verification and Accountability in Micro-charity</p>
+        </div>
+
+        <div class="project-container">
+            <div class="project-card glass-card">
+                <div class="icon-header">
+                    <i class="fa-solid fa-microscope text-accent"></i>
+                    <h3>Overview</h3>
+                </div>
+                <p>Charitable giving is powerful for social welfare, but a large portion of society refrains from
+                    micro-donations due to a deeply rooted fear: lack of trust, transparency, and accountability. In
+                    India, people avoid small cash donations (e.g., to beggars) due to concerns about misuse (drugs,
+                    illegal activities) rather than an unwillingness to help. It's an absence of a verifiable mechanism.
+                </p>
+                <div class="quote-box">
+                    "By replacing anonymous cash with digital credits, the project eliminates donor skepticism and
+                    ensures that charitable contributions are used solely for verified, essential needs."
+                </div>
+            </div>
+
+            <div class="project-card glass-card">
+                <div class="icon-header">
+                    <i class="fa-solid fa-lightbulb text-accent"></i>
+                    <h3>Solution Approach</h3>
+                </div>
+                <ul class="feature-list">
+                    <li><i class="fa-solid fa-check text-success"></i> <strong>Centralized Digital System:</strong>
+                        Seamless, cash-free micro-donations.</li>
+                    <li><i class="fa-solid fa-fingerprint text-success"></i> <strong>Needy Registration:</strong>
+                        Biometric identity assigned at nearby centers.</li>
+                    <li><i class="fa-solid fa-id-card text-success"></i> <strong>Donor Registration:</strong> Online via
+                        Aadhar/ID hooked to payment gateways.</li>
+                    <li><i class="fa-solid fa-store text-success"></i> <strong>Business Integration:</strong>
+                        Food/Cloth/Med vendors get notified to supply goods.</li>
+                    <li><i class="fa-solid fa-coins text-success"></i> <strong>Digital Credits Fulfillment:</strong>
+                        Needy receive goods directly via their verified accounts.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flowchart-container glass-card">
+            <h3><i class="fa-solid fa-diagram-project"></i> Application Flow</h3>
+            <div class="flow-steps">
+                <div class="step"><span>Donor<br>(Scan QR)</span></div>
+                <i class="fa-solid fa-arrow-right-long flow-arrow"></i>
+                <div class="step"><span>Identity Verification<br>(Biometric/Aadhar)</span></div>
+                <i class="fa-solid fa-arrow-right-long flow-arrow"></i>
+                <div class="step"><span>Check Needs<br>(Verified?)</span></div>
+                <i class="fa-solid fa-arrow-right-long flow-arrow"></i>
+                <div class="step"><span>Digital Credits<br>Issued</span></div>
+                <i class="fa-solid fa-arrow-right-long flow-arrow"></i>
+                <div class="step success"><span>Goods Provided<br>(Food/Med)</span></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Yash | TSA Portfolio. Built for Techno-Socio Activities MSE Submission.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
